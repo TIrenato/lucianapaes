@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUDO PELA NOSSA LU</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -77,27 +78,24 @@
         /* Estilos para a galeria de imagens */
         .image-gallery {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            margin-top: 20px;
+            justify-content: center;
+            gap: 20px; /* Espaço entre as miniaturas */
         }
 
         .image-gallery img {
-            width: 200px;
-            margin: 10px;
+            width: 200px; /* Defina a largura desejada */
+            height: 200px; /* Defina a altura desejada */
+            object-fit: cover; /* Garante que a imagem cubra o espaço atribuído sem distorção */
             border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.3s;
         }
-
-        .image-gallery img:hover {
-            transform: scale(1.1);
+        .centralizado {
+            text-align: center;
+            padding: 40px;
         }
+        
     </style>
 </head>
-
-<body>
-
     <header>
         <h1>Campanha do Bem</h1>
     </header>
@@ -114,21 +112,52 @@
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4BUc9cOlIKA" frameborder="0" allowfullscreen></iframe>
         </div>
-        <a href="https://link-para-sua-plataforma-de-doacao.com" class="donate-button">Faça sua doação</a>
-        &nbsp &nbsp
-        <h2>A minha trajetória até aqui</h2>
-        &nbsp
+        <a href="https://api.whatsapp.com/send?phone=55123456789&text=Olá,%20como%20posso%20ajudar%3F" class="donate-button" target="_blank">Enviar mensagem pelo WhatsApp</a>
+
+        
     </div>
+<body>
+    <!-- Seu HTML existente aqui -->
 
     <!-- Galeria de imagens -->
+    <div class="centralizado">
+        <h2>A minha trajetória até aqui</h2>
+    </div>
     <div class="image-gallery">
-        
-        <img src="caminho-para-imagem1.jpg" alt="Descrição da imagem 1">
-        <img src="caminho-para-imagem2.jpg" alt="Descrição da imagem 2">
-        <img src="caminho-para-imagem3.jpg" alt="Descrição da imagem 3">
+         <a href="img/acaosocial.jpeg" class="gallery-item"><img src="img/acaosocial.jpeg" alt="açao social"></a>
+        <a href="img/acaosocial2.jpeg" class="gallery-item"><img src="img/acaosocial2.jpeg" alt="Descrição da imagem 2"></a>
+        <a href="img/acaosocial3.jpeg" class="gallery-item"><img src="img/acaosocial3.jpeg" alt="Descrição da imagem 3"></a>
+        <a href="img/carta.jpeg" class="gallery-item"><img src="img/carta.jpeg" alt="açao social"></a>
+        <a href="img/jornal.jpeg" class="gallery-item"><img src="img/jornal.jpeg" alt="Descrição da imagem 2"></a>
+        <a href="img/pix.jpeg "class="gallery-item"><img src="img/pix.jpeg" alt="Descrição da imagem 3"></a>
+        <a href="img/WhatsApp Image 2024-02-19 at 13.17.56.jpeg" class="gallery-item"><img src="img/WhatsApp Image 2024-02-19 at 13.17.56.jpeg" alt="açao social"></a>
+        <a href="img/WhatsApp Image 2024-02-19 at 13.17.57 (1).jpeg" class="gallery-item"><img src="img/WhatsApp Image 2024-02-19 at 13.17.57 (1).jpeg" alt="Descrição da imagem 2"></a>
+        <a href="img/WhatsApp Image 2024-02-19 at 13.17.57 (2).jpeg"class="gallery-item"><img src="img/WhatsApp Image 2024-02-19 at 13.17.57 (2).jpeg" alt="Descrição da imagem 3"></a>
+        <a href="img/WhatsApp Image 2024-02-19 at 13.17.57 (3).jpeg" class="gallery-item"><img src="img/WhatsApp Image 2024-02-19 at 13.17.57 (3).jpeg" alt="açao social"></a>
+        <a href="img/WhatsApp Image 2024-02-19 at 13.17.57 (4).jpeg" class="gallery-item"><img src="img/WhatsApp Image 2024-02-19 at 13.17.57 (4).jpeg" alt="Descrição da imagem 2"></a>
+        <a href="img/WhatsApp Image 2024-02-19 at 13.17.58.jpeg"class="gallery-item"><img src="img/WhatsApp Image 2024-02-19 at 13.17.58.jpeg" alt="Descrição da imagem 3"></a>
+        <a href="img/WhatsApp Image 2024-02-19 at 13.17.58 (1).jpeg"class="gallery-item"><img src="img/WhatsApp Image 2024-02-19 at 13.17.58 (1).jpeg" alt="Descrição da imagem 3"></a>
+        <a href="img/WhatsApp Image 2024-02-19 at 13.17.58 (2).jpeg"class="gallery-item"><img src="img/WhatsApp Image 2024-02-19 at 13.17.58 (2).jpeg" alt="Descrição da imagem 3"></a>
+        <a href="img/WhatsApp Image 2024-02-19 at 13.17.58 (3).jpeg"class="gallery-item"><img src="img/WhatsApp Image 2024-02-19 at 13.17.58 (3).jpeg" alt="Descrição da imagem 3"></a>
+        <a href="img/WhatsApp Image 2024-02-19 at 13.17.59.jpeg"class="gallery-item"><img src="img/WhatsApp Image 2024-02-19 at 13.17.59.jpeg" alt="Descrição da imagem 3"></a>
         <!-- Adicione mais imagens conforme necessário -->
     </div>
 
+    <!-- Seu JavaScript existente aqui -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.image-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
