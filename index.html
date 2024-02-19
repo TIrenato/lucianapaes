@@ -6,74 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUDO PELA NOSSA LU</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+        /* Estilos existentes omitidos para brevidade */
 
-        header {
-            background-color: #ffffff;
-            color: #fff;
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            padding-top: 30px;
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-container iframe,
-        .video-container object,
-        .video-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .donate-button {
-            display: inline-block;
-            width: 200px;
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: #fff;
-            text-align: center;
-            text-decoration: none;
-            border: none;
+        }
+
+        .image-gallery img {
+            width: 200px;
+            margin: 10px;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: transform 0.3s;
         }
 
-        .donate-button:hover {
-            background-color: #45a049;
+        .image-gallery img:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -85,18 +36,21 @@
     </header>
 
     <div class="container">
-        <h2>Luciana de Fátima Paes Pantoja</h2>
-        <p>Prezado amigo(a) solidário,
-            Estou em busca de ajuda!
-            Em setembro de 2022 comecei na luta para identificar o que tinha de errado com minha saúde e, mais precisamente, em dezembro do mesmo ano fui diagnosticada com tumor na mama esquerda localmente avançado. Consegui avançar bastante em relação ao tratamento e em maio/2023 fiz a mastectomia radical esquerda, dando sequência no tratamento continuei as quimioterapias. Infelizmente não consegui a regressão da doença que avançou e agora está em metástase, portanto trata-se de uma corrida contra o tempo, literalmente.
-            O remédio que preciso não faz parte do protocolo institucional do SUS, por esse motivo venho através desta carta pedir encarecidamente pela ajuda de vocês. Doem qualquer valor, pois apenas uma única sessão de quimioterapia, em um laboratório mais "em conta", está custando 75 mil Reais e preciso inicialmente de 8 sessões dessa.
-            Peço a colaboração financeira, o compartilhamento, a ajuda para apelar junto ao governo federal ou qualquer forma de ajuda eu não só preciso, mas NECESSITO da AJUDA de TODOS.
-            Quero continuar o máximo possível com meus filhos.
-            Clamo a DEUS que os abençoe cem vezes mais, qualquer ajuda é muito bem- vinda.</p>
+        <!-- Conteúdo existente omitido para brevidade -->
+
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4BUc9cOlIKA" frameborder="0" allowfullscreen></iframe>
         </div>
+
         <a href="https://link-para-sua-plataforma-de-doacao.com" class="donate-button">Faça sua doação</a>
+    </div>
+
+    <!-- Adicione esta seção para a galeria de imagens -->
+    <div class="image-gallery">
+        <img src="caminho-para-imagem1.jpg" alt="Descrição da imagem 1">
+        <img src="caminho-para-imagem2.jpg" alt="Descrição da imagem 2">
+        <img src="caminho-para-imagem3.jpg" alt="Descrição da imagem 3">
+        <!-- Adicione mais imagens conforme necessário -->
     </div>
 
 </body>
